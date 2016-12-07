@@ -1,0 +1,15 @@
+html, body {
+    box-sizing: border-box;
+}
+
+body {
+    background-color:$bg-color;
+}
+
+.page-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: $white;
+    padding: $inner-padding/2;
+}
