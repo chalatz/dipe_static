@@ -1,0 +1,32 @@
+.site-header {
+    background-color: $header-bg;
+    @include clearfix;
+    padding: $inner-padding $inner-padding/2;
+    color: $white;
+    font-weight: bold;
+}
+
+.ethnosimo {
+    width: 64px;
+    margin: 0 auto;
+}
+
+.logo-text {
+    text-align: center;
+    margin-left: $inner-margin;
+    font-size: .8em;
+    
+    p {
+        margin: 0.2em;
+    }
+}
+
+.site-title {
+    border-top: 2px solid $white;
+    border-bottom: 2px solid $white;
+    text-align: center;
+    margin: 0.8em 0;
+    padding: .5em 0;
+    font-size: 1.2em;
+    
+}

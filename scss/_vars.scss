@@ -15,3 +15,29 @@ $bg-color: #d9e1e8;
 $text-color: #282c37;
 
 $header-bg: $lightblue;
+
+@mixin breakpoint($point) {
+  @if $point == large {
+    @media (min-width: 64.375em) { @content; }
+  }
+  @else if $point == medium {
+    @media (min-width: 50em) { @content; }
+  }
+  @if $point == medium_up {
+    @media (max-width: 50em) { @content; }
+  }
+  @if $point == small_up {
+    @media (max-width: 350px) { @content; }
+  }
+}
+
+@mixin clearfix {
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}

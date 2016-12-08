@@ -406,14 +406,20 @@ html, body {
   box-sizing: border-box; }
 
 body {
-  background-color: #d9e1e8; }
+  background-color: #d9e1e8;
+  margin: 0 auto; }
 
 .page-wrapper {
   width: 100%;
-  margin: 0 auto;
-  overflow: hidden;
-  background-color: #f0f5f9;
-  padding: 0.5em; }
+  background-color: #f0f5f9; }
+  .page-wrapper:before, .page-wrapper:after {
+    content: "";
+    display: table; }
+  .page-wrapper:after {
+    clear: both; }
+
+img {
+  max-width: 100%; }
 
 body {
   font-family: "Noto Sans", sans-serif;
@@ -421,5 +427,35 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Noto Serif", serif; }
+
+.site-header {
+  background-color: #2b90d9;
+  padding: 1em 0.5em;
+  color: #f0f5f9;
+  font-weight: bold; }
+  .site-header:before, .site-header:after {
+    content: "";
+    display: table; }
+  .site-header:after {
+    clear: both; }
+
+.ethnosimo {
+  width: 64px;
+  margin: 0 auto; }
+
+.logo-text {
+  text-align: center;
+  margin-left: 1em;
+  font-size: .8em; }
+  .logo-text p {
+    margin: 0.2em; }
+
+.site-title {
+  border-top: 2px solid #f0f5f9;
+  border-bottom: 2px solid #f0f5f9;
+  text-align: center;
+  margin: 0.8em 0;
+  padding: .5em 0;
+  font-size: 1.2em; }
 
 /*# sourceMappingURL=styles.css.map */

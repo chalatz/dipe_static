@@ -4,12 +4,15 @@ html, body {
 
 body {
     background-color:$bg-color;
+    margin: 0 auto;
 }
 
 .page-wrapper {
     width: 100%;
-    margin: 0 auto;
-    overflow: hidden;
     background-color: $white;
-    padding: $inner-padding/2;
+    @include clearfix;
+}
+
+img {
+    max-width: 100%;
 }
