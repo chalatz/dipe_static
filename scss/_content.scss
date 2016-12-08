@@ -1,8 +1,6 @@
-$page-title-font-size: 2em;
-
 .page-title {
     text-align: center;
-    font-size: $page-title-font-size;
+    font-size: 2em;
     font-weight: bold;
     font-family: $serif;
     padding: 0.5em;
@@ -15,5 +13,25 @@ $page-title-font-size: 2em;
 }
 
 .teaser {
-    padding: .2em;
+    padding: 1em;
+    border-bottom: 2px solid $blue;
+    @include box_shadow($blue);
+}
+
+.teaser-title {
+    a {
+        color: $darkblue;
+    }
+}
+
+.article-date {
+    margin-left: 1em;
+    color: darken($gray, 20%);
+    font-style: oblique;
+}
+
+.article-tags {
+    a {
+        color: $lightblue;
+    }
 }
