@@ -1,0 +1,19 @@
+$page-title-font-size: 2em;
+
+.page-title {
+    text-align: center;
+    font-size: $page-title-font-size;
+    font-weight: bold;
+    font-family: $serif;
+    padding: 0.5em;
+    @include box_shadow($darkblue);
+}
+
+.page-title-icon {
+    width: .7em;
+    width: .7em;
+}
+
+.teaser {
+    padding: .2em;
+}
