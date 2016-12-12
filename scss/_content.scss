@@ -1,6 +1,6 @@
 .page-title {
     text-align: center;
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: bold;
     font-family: $serif;
     padding: 0.5em;
@@ -10,6 +10,16 @@
 .page-title-icon {
     width: .9em;
     width: .9em;
+}
+
+.article-page {
+    .page-title {
+        font-size: 1.3em;
+        .page-title-icon {
+            width: .7em;
+            width: .7em;
+        }
+    }
 }
 
 .teaser {
@@ -62,4 +72,33 @@
     padding: $inner-padding $inner-padding/2;
     background-color: $darkblue;
     color: $white;    
+}
+
+.pagination {
+    padding: $inner-padding $inner-padding/2;
+    text-align: center;
+    background-color: $blue;
+    margin: $outer-margin 0;
+    color: $white;
+    a {
+        color: white;
+        padding: .5em;
+    }
+    .item {
+        display: inline-block;
+        margin: .5em 0;
+    }
+
+    .current {
+        padding: .5em;
+    }
+    .current, 
+    a:hover {
+        background-color: $darkblue;
+    }
+    
+    .first, .last {
+        display: block;
+    }
+
 }

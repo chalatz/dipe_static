@@ -468,7 +468,7 @@ a {
 
 .page-title {
   text-align: center;
-  font-size: 1.5em;
+  font-size: 2em;
   font-weight: bold;
   font-family: "Noto Serif", serif;
   padding: 0.5em;
@@ -478,6 +478,12 @@ a {
 .page-title-icon {
   width: .9em;
   width: .9em; }
+
+.article-page .page-title {
+  font-size: 1.3em; }
+  .article-page .page-title .page-title-icon {
+    width: .7em;
+    width: .7em; }
 
 .teaser {
   padding: 1em;
@@ -528,5 +534,25 @@ a {
   padding: 1em 0.5em;
   background-color: #103b5b;
   color: #f0f5f9; }
+
+.pagination {
+  padding: 1em 0.5em;
+  text-align: center;
+  background-color: #1c669c;
+  margin: 2em 0;
+  color: #f0f5f9; }
+  .pagination a {
+    color: white;
+    padding: .5em; }
+  .pagination .item {
+    display: inline-block;
+    margin: .5em 0; }
+  .pagination .current {
+    padding: .5em; }
+  .pagination .current,
+  .pagination a:hover {
+    background-color: #103b5b; }
+  .pagination .first, .pagination .last {
+    display: block; }
 
 /*# sourceMappingURL=styles.css.map */
