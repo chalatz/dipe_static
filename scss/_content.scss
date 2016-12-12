@@ -15,6 +15,7 @@
 .teaser {
     padding: 1em;
     border-bottom: 2px solid $blue;
+    @include clearfix;
     @include box_shadow($blue);
 }
 
@@ -31,7 +32,34 @@
 }
 
 .article-tags {
+    margin-top: 2em;
     a {
         color: $lightblue;
+        background: $blue;
+        padding: .3em .4em;
+        display: inline-block;
+        color: yellow;
+        margin-right: .5em;
+        margin-bottom: .5em;
     }
+}
+
+.read-more {
+    @include clearfix;
+    margin: 2em 0 1em 0;
+    a {
+        background-color: $darkblue;
+        color: $white;
+        padding: .5em .5em;
+    }
+}
+
+.sidebar {
+    padding: $inner-padding $inner-padding/2;
+}
+
+.site-footer {
+    padding: $inner-padding $inner-padding/2;
+    background-color: $darkblue;
+    color: $white;    
 }
