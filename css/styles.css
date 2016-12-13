@@ -411,7 +411,9 @@ body {
 
 .page-wrapper {
   width: 100%;
-  background-color: #f0f5f9; }
+  background-color: #f0f5f9;
+  max-width: 1200px;
+  margin: 0 auto; }
   .page-wrapper:before, .page-wrapper:after {
     content: "";
     display: table; }
@@ -420,6 +422,18 @@ body {
 
 img {
   max-width: 100%; }
+
+@media (min-width: 50em) {
+  .main-content {
+    display: inline;
+    width: 65%;
+    float: left; } }
+
+@media (min-width: 50em) {
+  .sidebar {
+    display: inline;
+    width: 30%;
+    float: right; } }
 
 body {
   font-family: "Noto Sans", sans-serif;
@@ -533,7 +547,14 @@ a {
 .site-footer {
   padding: 1em 0.5em;
   background-color: #103b5b;
-  color: #f0f5f9; }
+  color: #f0f5f9;
+  width: 100%;
+  clear: both; }
+  .site-footer:before, .site-footer:after {
+    content: "";
+    display: table; }
+  .site-footer:after {
+    clear: both; }
 
 .pagination {
   padding: 1em 0.5em;

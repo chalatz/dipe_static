@@ -71,7 +71,10 @@
 .site-footer {
     padding: $inner-padding $inner-padding/2;
     background-color: $darkblue;
-    color: $white;    
+    color: $white;
+    width: 100%;
+    clear: both;
+    @include clearfix; 
 }
 
 .pagination {
